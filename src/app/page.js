@@ -4,10 +4,10 @@ import HomeLayout from "./HomePage/HomeLayout/HomeLayout";
 
 export default function Home() {
   return (
-    <main>
+    <div >
     <Navbar></Navbar>
     <HomeLayout></HomeLayout>
     
-    </main>
+    </div>
   );
 }

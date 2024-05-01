@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 import homeLogo from '../../assest/home-logo.png';
 import { GiReceiveMoney } from "react-icons/gi";
+import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="bg-[#FFFFFF]">
       <div className="flex justify-between items-center p-4 ">
         <div className="flex gap-6">
         <Image
@@ -22,9 +23,12 @@ const Navbar = () => {
           </h3>
         </div>
         <div className="flex gap-[72px] items-center ">
-          <div>
-            <input  type="text" className="border p-3 rounded-md" placeholder="Search Hadith " />
-          </div>
+          <div className="relative">
+            <input  type="text" className="border ps-10 p-3 rounded-md" placeholder="Search Hadith " />
+                 
+            <CiSearch  className="absolute top-[14px] left-4 text-xl"/>
+           
+              </div>
           <button className="bg-[#2B9E76] p-3 rounded-md text-white flex items-center  gap-2 "><span>সাপোর্ট করুন</span> <GiReceiveMoney className="text-2xl " />
 </button>
         </div>
